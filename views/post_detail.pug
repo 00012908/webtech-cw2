@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+  main.all-posts
+    .flex
+      h2.post-title.text-left #{post.title}
+      em.post-author #{post.author}
+    div.breaking-line
+      hr
+    br
+    p.post-body.text-left#body= post.body 
+    
+    script(type="text/javascript").
+      window.onload = function () {
+        document.getElementById('body').innerHTML = marked(document.getElementById('body').innerHTML);
+      }

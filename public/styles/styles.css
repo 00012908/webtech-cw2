@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+ width: 90%;
+}
+
+.text-center {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+}
+
+.text-left {
+  text-align: left;
+  margin-left: 3.5rem;
+}
+
+.text-right {
+  text-align: left;
+  margin-right: 4.5rem;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5aa6a;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav_items {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav_item {
+  margin: 0.5rem 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin: 5rem 5rem;
+}
+
+.intro_primary {
+  font-size: 3rem;
+}
+
+.intro_secondary {
+  font-size: 2rem;
+}
+
+.cta {
+  color: #409b9d;
+  border: 2px solid #409b9d;
+  border-radius: 0.3rem;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 5rem;
+  font-size: 1.5rem;
+}
+
+.cta:hover {
+  color: rgba(64, 155, 157, 0.9);
+  border-color: rgba(64, 155, 157, 0.9);
+}
+
+.msg {
+  height: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.msg > * {
+  margin: 1rem;
+}
+
+.empty {
+  font-size: 2rem;
+}
+
+.emoticon {
+  font-size: 5rem;
+}
+
+.create-post {
+  width: 75%;
+  margin: auto;
+  box-shadow: 0 0 16px 8px #ccc; /* here */
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form > * {
+  margin: 1rem auto;
+  width: 85%;
+}
+
+.success {
+  border: 1px solid #00ff00;
+  border-radius: 3px;
+}
+
+.error {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.create-post-btn {
+  width: auto;
+  border: 3px solid #409b9d;
+  border-radius: 3px;
+  color: #409b9d;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+.create-post-btn:hover {
+  border-color: rgba(64, 155, 157, 0.9);
+  color: rgba(64, 155, 157, 0.9);
+}
+
+.post-input {
+  padding: 1rem;
+}
+
+.posts {
+  width: 85%;
+  margin: auto;
+}
+
+.post-item {
+  border: 1px solid #444;
+  border-radius: 3px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-post,
+.archive-post {
+  transition: all 0.4s ease-in;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.delete-post:hover {
+  color: #eee;
+  background-color: #dc143c;
+}
+
+.archive-post:hover {
+  color: #eee;
+  background-color: #ffd700;
+}
+
+.all-posts {
+  width: 65%;
+  margin: auto;
+}
+
+.post-title {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.post-author {
+  font-size: 1rem;
+  padding: 2rem;
+  width: 30%;
+
+}
+
+.post-body {
+  white-space: normal;
+  width: 100%;
+  word-wrap: break-words;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline {
+  display: inline;
+}
+
+.breaking-line {
+  display: flex;
+  justify-content: center;
+}

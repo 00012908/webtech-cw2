@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+  main.all-posts     
+    if posts.length
+      ul.posts
+        each post in posts
+          li.post-item 
+            a(href=`posts/${ post.id }`)= post.title
+            div.buttons
+              if post.archived
+                a.archive-post(href=`posts/${ post.id }/unarchive`) Undo archive
+              else 
+                a.archive-post(href=`posts/${ post.id }/archive`) Archive
+              a.delete-post(href=`posts/${ post.id }/delete`) Delete
+    else
+      div.msg
+        p.empty No any posts yet
+        p.emoticon ¯\_(ツ)_/¯

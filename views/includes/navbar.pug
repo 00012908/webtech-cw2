@@ -1,0 +1,16 @@
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
+
+
+header.navbar
+  a(href="/" title="Homepage")
+    img(src="/images/homepage.svg", alt="Brand Logo", srcset="").logo
+
+  nav.nav
+    ul.nav_items
+      li.nav_item 
+          +link('/posts/create-post', 'New post')(class="nav-link")
+      li.nav_item 
+        +link('/posts', 'All posts')(class="nav-link")
+      li.nav_item 
+        +link('/archive', 'Archive')(class="nav-link")

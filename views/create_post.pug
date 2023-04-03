@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+  main.create-post
+    h2.form-title.text-left Create post
+    
+    if success
+      p.success.text-left Post was added successfully
+
+    if error
+      p.error.text-left Please fill post fields before submitting
+
+    form(method="POST")
+      //- label.label Author
+      input(class="post-input" name="author" placeholder="Author")
+      
+      //- label.label Title
+      input(class="post-input" name="title" placeholder="Title")
+      
+      //- label.label Body
+      textarea(class="post-input" name="body" rows="10" cols="65" placeholder="Your blog here")
+
+      button.create-post-btn.text-right Create post
