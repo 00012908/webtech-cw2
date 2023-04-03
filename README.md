@@ -13,5 +13,5 @@ Users can create/delete/archive blogs. Application stores data to json file.
     "pug": "^3.0.2"
 }`
 
-## [GitHub](https://linktoyourgithubrepo)
+## [GitHub](https://github.com/00012908/webtech-cw2)
 ## [Glitch](https://glitch.com/linktoyourapp)
